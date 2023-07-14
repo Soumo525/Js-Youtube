@@ -7,3 +7,6 @@ container config done
 Day02 ->
 Let, Const and Var
 Datatypes and ECMA standards
+
+Day03 ->
+Operations and Conversion
