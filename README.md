@@ -13,3 +13,4 @@ Operations and Conversion
 
 Day04 ->
 Comparison of datatypes
+Data types of javascript summary
