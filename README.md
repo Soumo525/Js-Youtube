@@ -10,3 +10,6 @@ Datatypes and ECMA standards
 
 Day03 ->
 Operations and Conversion
+
+Day04 ->
+Comparison of datatypes
