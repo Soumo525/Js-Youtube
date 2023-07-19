@@ -17,3 +17,6 @@ Data types of javascript summary
 
 Day05 ->
 Stack and Heap memory
+
+Day06 ->
+String
