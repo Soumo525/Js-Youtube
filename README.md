@@ -19,4 +19,4 @@ Day05 ->
 Stack and Heap memory
 
 Day06 ->
-String
+String, Number
