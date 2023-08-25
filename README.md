@@ -22,4 +22,4 @@ Day06 ->
 String, Number
 
 Day07 ->
-Date and time 
+Date and time ,Array
