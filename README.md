@@ -32,4 +32,4 @@ Functions and parameter, Functions with objects and array,
 Global and local scope
 
 Day10 ->
-Scope level and mini hoisting
+Scope level and mini hoisting,THIS and arrow function
