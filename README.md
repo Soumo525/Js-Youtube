@@ -30,3 +30,6 @@ Object 1 , Object 2 ,Object 3 and JSON
 Day09 ->
 Functions and parameter, Functions with objects and array,
 Global and local scope
+
+Day10 ->
+Scope level and mini hoisting
