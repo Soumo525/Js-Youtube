@@ -34,3 +34,6 @@ Global and local scope
 Day10 ->
 Scope level and mini hoisting,THIS and arrow function,
 IIFE ,execute code + call stack
+
+Day11 ->
+Control flow , Truthy
