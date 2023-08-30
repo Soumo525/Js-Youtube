@@ -39,4 +39,4 @@ Day11 ->
 Control flow , Truthy
 
 Day12 ->
-For loop with break and continue
+For loop with break and continue , While and do while loop 
