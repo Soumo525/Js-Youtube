@@ -37,3 +37,6 @@ IIFE ,execute code + call stack
 
 Day11 ->
 Control flow , Truthy
+
+Day12 ->
+For loop with break and continue
