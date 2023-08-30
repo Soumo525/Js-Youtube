@@ -40,4 +40,4 @@ Control flow , Truthy
 
 Day12 ->
 For loop with break and continue , While and do while loop 
-High Order Array loops
+High Order Array loops, Filter map and reduce
