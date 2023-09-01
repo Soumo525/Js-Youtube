@@ -44,3 +44,6 @@ High Order Array loops, Filter map and reduce
 
 Day13 -> 
 DOM
+
+Day14 ->
+How to create a new element in DOM
