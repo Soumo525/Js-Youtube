@@ -47,3 +47,6 @@ DOM
 
 Day14 ->
 How to create a new element in DOM
+
+Day15 ->
+Edit and remove elements in DOM 
