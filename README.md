@@ -56,4 +56,4 @@ Day16 ->
 Digital Clock, Gusess_the_Number 
 
 Day17 ->
-Events, 
+Events, Async Javascript fundamentals
