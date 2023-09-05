@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 75 Hard Challenge</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    
+
+
+    // const sayDate = function(){
+    //     console.log("Soumo",Date.now());
+    // }
+    // //setInterval( sayDate, 1000,)
+
+    //  const stopSS = setInterval(sayDate, 1000)
+
+    //  clearTimeout(stopSS)
+
+        const Time = function() {
+            const event = new Date();
+
+            console.log("HELLO",event.toLocaleTimeString());
+        }
+
+
+
+        // document.querySelector('#start').addEventListener('click', Start)
+
+
+        // document.querySelector('#stop').addEventListener('click', Stop)
+
+        // function Start (){
+        //     timeStart = setInterval(Time, 1000)
+        // }
+        // function Stop() {
+        //     clearInterval(timeStart)
+        //     console.log("Stop");
+        // }
+/////////////////////////////////////////////
+        document.querySelector('#start').addEventListener('click', function(){
+            timeStartNow = setInterval(Time, 1000)
+        })
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(timeStartNow)
+            console.log("Stop");
+        })
+
+
+</script>
+</html>

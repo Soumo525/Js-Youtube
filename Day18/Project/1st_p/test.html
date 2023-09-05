@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st_P</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button id="stop">stop</button>
+</body>
+
+<script>
+    // setTimeout( function () {
+    //     console.log("Soumo");
+    // },1000) //  1 ber run
+
+    // const say = function() {
+    //     console.log("Soumo");
+        
+    // }
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "HHHHI"
+    }
+ 
+    //setTimeout(changeText,2000)
+
+    const changeMe = setTimeout(changeText,2000)
+    
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOP");
+    })
+    
+</script>
+</html>
