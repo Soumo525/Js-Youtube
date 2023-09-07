@@ -57,3 +57,9 @@ Digital Clock, Gusess_the_Number
 
 Day17 ->
 Events, Async Javascript fundamentals
+
+Day18 ->
+Basic Project
+
+Day19 ->
+Basic Project
