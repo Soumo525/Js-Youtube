@@ -14,13 +14,16 @@
 4	DONE	The operation is complete.
 </body>
 <script>
-    const ReqUrl = 'https://api.github.com/users'
+    const ReqUrl = 'https://api.github.com/users/Soumo525'
     const Xhr = new XMLHttpRequest()
     Xhr.open('GET',ReqUrl)
     Xhr.onreadystatechange = function () {
         console.log(Xhr.readyState);
         if (Xhr.readyState === 4) {
-            console.log(this.responseText);
+           const data = JSON.parse(this.responseText)
+           console.log(typeof data);
+
+            console.log(data.followers);
         }
     }
  
