@@ -12,7 +12,10 @@
             <input id="name" placeholder="Enter your Username" required>
             <button type="submit">Submit</button>
             <button id="reset">Reset</button>
+            <p><b> Your Followers </b></p>
             <h2></h2>
+            <p><b>Your UserImage</b></p>
+            <h3></h3>
         </form>
     </div>
 </body>
@@ -47,11 +50,17 @@
         if (Xhr.readyState === 4) {
            const data = JSON.parse(this.responseText)
            //console.log(typeof data);
+           console.log(data);
 
             console.log(data.followers);
             const count = data.followers
             console.log(count);
+            // img 
+            const img = data.avatar_url
+            console.log(img);
             document.querySelector('h2').innerHTML = count
+            document.querySelector('h3').innerHTML = `<img src="${img}" alt="UserImage">`
+           
         }
     }
     Xhr.send();
