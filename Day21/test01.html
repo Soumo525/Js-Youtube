@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <div>
+        <form id="form">
+            <h1> Enter your UserName</h1>
+            <input id="name" placeholder="Enter your Username" required>
+            <button type="submit">Submit</button>
+            <button id="reset">Reset</button>
+            <h2></h2>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+
+
+    // const fromDe = document.getElementById('form').addEventListener('submit', function(event) {
+    // const showDe = function(){
+    // showDe.preventDefault();
+    // const valueDe = document.querySelector('#name').value
+    // console.log(valueDe);
+    // }
+    // })
+
+    const form = document.getElementById('form')
+
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const yourName = document.getElementById('name').value
+    console.log(yourName)
+    const ReqUrl11 = 'https://api.github.com/users/'
+    const ReqUrl22 = yourName
+    //console.log(ReqUrl11.concat(ReqUrl22));
+    const Requrl33 = ReqUrl11.concat(ReqUrl22)
+    console.log(Requrl33)
+    const Xhr = new XMLHttpRequest()
+    Xhr.open('GET',Requrl33)
+    Xhr.onreadystatechange = function () {
+        //console.log(Xhr.readyState);
+        if (Xhr.readyState === 4) {
+           const data = JSON.parse(this.responseText)
+           //console.log(typeof data);
+
+            console.log(data.followers);
+            const count = data.followers
+            console.log(count);
+            document.querySelector('h2').innerHTML = count
+        }
+    }
+    Xhr.send();
+})
+ 
+const dataReset = function(){
+    console.log("Click");
+    location.reload();
+}
+
+
+
+const resetData = document.querySelector('#reset').addEventListener('click', dataReset)
+
+</script>

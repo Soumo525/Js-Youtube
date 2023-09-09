@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+    <h1>Followers Show</h1>
+    <button id="start">Start</button> 
+    <h2></h2>
+</body>
+<script>
+
+  const showFollo = function () {
+    console.log("Click");
+    const ReqUrl = 'https://api.github.com/users/hiteshchoudhary'
+    console.log(typeof ReqUrl);
+    const Xhr = new XMLHttpRequest()
+    Xhr.open('GET',ReqUrl)
+    Xhr.onreadystatechange = function () {
+        //console.log(Xhr.readyState);
+        if (Xhr.readyState === 4) {
+           const data = JSON.parse(this.responseText)
+           //console.log(typeof data);
+
+            console.log(data.followers);
+            const count = data.followers
+            console.log(count);
+            document.querySelector('h2').innerHTML = count
+        }
+    }
+    Xhr.send();
+
+  }
+    document.querySelector('#start').addEventListener('click', showFollo)
+    
+    
+</script>
+</html>
