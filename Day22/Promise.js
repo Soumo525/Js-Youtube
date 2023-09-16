@@ -41,7 +41,7 @@ const promiseFour = new Promise(function(resolve, reject){
         } else {
             reject('ERROR: Something went wrong')
         }
-    }, 1000)
+    }, 1000) 
 })
 
 
